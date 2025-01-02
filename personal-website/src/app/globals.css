@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+  height: 100vh; /* Make the background take up the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, #c8b3fc, #eadbf5, #e1d9f8, #60a3d9);
+  background-size: 400% 400%; /* Ensure the gradient covers a larger area to create the moving effect */
+  animation: gradientMove 8s ease infinite; /* Animate the gradient movement */
+}
+
+.header {
+  font-size: 3rem;
+  text-align: center;
+  opacity: 0; /* Start with hidden text */
+  transition: opacity 2s ease-in-out; /* Gradually fade in */
+  font: montserrat
+
+}
+
+.fadeIn {
+  opacity: 1; /* Fade to full opacity */
+}
+/* Define the keyframes to move the gradient */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
