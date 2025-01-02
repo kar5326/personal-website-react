@@ -40,6 +40,11 @@ body {
 
 }
 
+.subheading {
+  font-size: 2rem;
+  text-align: left;
+}
+
 .fadeIn {
   opacity: 1; /* Fade to full opacity */
 }
