@@ -20,15 +20,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+li {
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+.parent {
+  
+  min-height: 100%; /* Ensure container height matches content */
+}
+
 .background {
-  height: 100vh; /* Make the background take up the full height of the viewport */
+  height: 150vh; /* Make the background take up the full height of the viewport */
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(45deg, #c8b3fc, #eadbf5, #e1d9f8, #60a3d9);
-  background-size: 400% 400%; /* Ensure the gradient covers a larger area to create the moving effect */
+  background: linear-gradient(45deg, #aa8bf7, #eadbf5, #e1d9f8, #60a3d9);
+  background-size: 400% 500%; /* Ensure the gradient covers a larger area to create the moving effect */
   animation: gradientMove 8s ease infinite; /* Animate the gradient movement */
+  height: 100%; /* Make sure height adjusts with different screen sizes */
 }
 
 .header {
@@ -36,13 +47,25 @@ body {
   text-align: center;
   opacity: 0; /* Start with hidden text */
   transition: opacity 2s ease-in-out; /* Gradually fade in */
-  font: montserrat
+  font: montserrat;
+  overflow: auto; /* Prevent content from spilling out */
 
 }
 
 .subheading {
   font-size: 2rem;
   text-align: left;
+}
+
+.title {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 3px;
 }
 
 .fadeIn {

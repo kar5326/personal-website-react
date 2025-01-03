@@ -7,8 +7,8 @@ const Header = () => {
         setFadeIn(true);
         }, []);
     return (
-        <h1 className={`${fadeIn ? 'fadeIn' : ''} header font-[family-name:var(--font-montserrat)]  `} >
-            Hello, Welcome to My Page!
+        <h1 className={`${fadeIn ? 'fadeIn' : ''} header font-[family-name:var(--font-montserrat)]  mt-10 sm:text-center`} >
+            Welcome to My Page!
         </h1>
     );
 };
