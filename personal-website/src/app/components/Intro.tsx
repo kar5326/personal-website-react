@@ -22,9 +22,9 @@ const Intro = () => {
         delivering high-quality code that aligns with stakeholder requirements and enhances user experiences. 
         I take pride in producing work that is both efficient and impactful.
         </p>
-          {/* <p className="text-sm text-center sm:text-left font-[family-name:var(--font-montserrat)]"> 
-            I am currently based in New Hampshire and enjoy spending my free time hiking, 
-          playing roller derby, and crocheting.</p> */}
+        <p className="text-sm text-center sm:text-left font-[family-name:var(--font-montserrat)]"> 
+          I am currently based in New Hampshire and enjoy spending my free time hiking, 
+        playing roller derby, and crocheting.</p>
       </div>
     </div>
   );

@@ -52,6 +52,12 @@ li {
 
 }
 
+.side-by-side {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
 .subheading {
   font-size: 2rem;
   text-align: left;

@@ -1,15 +1,18 @@
+"use client"
 import React from 'react';
 
 const Experience = () => {
   return (
     <div className="font-[family-name:var(--font-montserrat)]">
         <h1 className=" subheading ">Experience</h1>
-        <h3  className="title font-bold sm:text-left ">
-            Software Engineer at Liberty Mutual Insurance 
-        </h3>
-        <h3 className="date sm:text-left ">
-            2022-Present
-        </h3>
+        <div className="side-by-side">
+            <h3  className="title font-bold sm:text-left ">
+                Software Engineer at Liberty Mutual Insurance 
+            </h3>
+            <h3 className="date sm:text-left ">
+                2022-Present
+            </h3>
+        </div>
         <ul  className="text-sm text-center mb-3 sm:text-left"> 
             <li>
                 Developed new features for invoice registration and processing in Latin American markets.
@@ -22,12 +25,14 @@ const Experience = () => {
             </li>
         </ul>
 
-        <h3 className="title font-bold sm:text-left ">
-            Techstart Co-Op at Liberty Mutual Insurance
-        </h3>
-        <h3 className="date sm:text-left ">
-            2021
-        </h3>
+        <div className="side-by-side">
+            <h3 className="title font-bold sm:text-left ">
+                Techstart Co-Op at Liberty Mutual Insurance
+            </h3>
+            <h3 className="date sm:text-left ">
+                2021
+            </h3>
+        </div>
         <ul  className="text-sm text-center mb-3 sm:text-left"> 
             <li>
                 Developed new components for the global internal homepage using React.
@@ -40,12 +45,14 @@ const Experience = () => {
             </li>
         </ul>
 
-        <h3  className="title font-bold sm:text-left ">
-            Techstart Co-Op at Liberty Mutual Insurance
-        </h3>
-        <h3 className="date sm:text-left ">
-            2020
-        </h3>
+        <div className="side-by-side">
+            <h3  className="title font-bold sm:text-left ">
+                Techstart Co-Op at Liberty Mutual Insurance
+            </h3>
+            <h3 className="date sm:text-left ">
+                2020
+            </h3>
+        </div>
         <ul  className="text-sm text-center mb-3 sm:text-left"> 
             <li>
                 Developed an online inventory website for video conferencing hardware using MEAN tech stack.
