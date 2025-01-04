@@ -17,11 +17,8 @@ export default function Home() {
       <Header/>
       <Intro/>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start mt-10">
-        
         <Experience />
         <Education />
-        
-        
       </main>
       <div className=" row-start-3 text-left max-w-prose">
       
